@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="c"  uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,19 +9,20 @@
 	</head>
 	<body>
 		<div>
-		<input type='search' id='pesquisa-estabelecimento' placeholder='Procure por estabelecimentos...'>
+			<form>
+			<input type='search' name='recuperarEstabelecimento' id='recuperarEstabelecimento' placeholder='Procure por estabelecimentos...'>
+			<input type='submit'>
 			<div>
 				<c:forEach var="estabelecimento" items="${estabelecimento}">
-				
-					<h1><c:out value="${estabelecimento.nome}"/></h1>	
-					<br>		
-					<h4><c:out value="${estabelecimento.telefone}"/></h4>
-					<br>
-					<h4><c:out value="${estabelecimento.tipoEstabelecimento}" /></h4>
-					
+					<div>
+						<h1><c:out value="${estabelecimento.nome}"/></h1>			
+						<h4><c:out value="${estabelecimento.telefone}"/></h4>
+						<h4><c:out value="${estabelecimento.tipoEstabelecimento}" /></h4>
+					</div>
 				</c:forEach>
 			</div>
 			<br>
+			</form>
 		</div>
 	</body>
 </html>
