@@ -18,6 +18,7 @@
 						<h1><c:out value="${estabelecimento.nome}"/></h1>			
 						<h4><c:out value="${estabelecimento.telefone}"/></h4>
 						<h4><c:out value="${estabelecimento.tipoEstabelecimento}" /></h4>
+						<h4><c:out value="${estabelecimento.horario }" /></h4>
 					</div>
 				</c:forEach>
 			</div>
