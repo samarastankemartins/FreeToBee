@@ -12,11 +12,11 @@
 			<div>
 				<c:forEach var="estabelecimento" items="${estabelecimento}">
 				
-					<c:out value="${estabelecimento.nome}"/>	
+					<h1><c:out value="${estabelecimento.nome}"/></h1>	
 					<br>		
-					<c:out value="${estabelecimento.telefone}"/>
+					<h4><c:out value="${estabelecimento.telefone}"/></h4>
 					<br>
-					<c:out value="${estabelecimento.tipoEstabelecimento}" />
+					<h4><c:out value="${estabelecimento.tipoEstabelecimento}" /></h4>
 					
 				</c:forEach>
 			</div>
