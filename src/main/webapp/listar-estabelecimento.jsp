@@ -11,7 +11,7 @@
 		<div>
 			<form>
 			<input type='search' name='recuperarEstabelecimento' id='recuperarEstabelecimento' placeholder='Procure por estabelecimentos...' size='40'>
-			<input type='submit'>
+			<input type='submit' name='botaopesquisar' value='Pesquisar'>
 			<div>
 				<c:forEach var="estabelecimento" items="${estabelecimento}">
 					<div>
